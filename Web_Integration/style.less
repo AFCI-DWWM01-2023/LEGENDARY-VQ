@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #efe784;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20vw;
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('./img/header.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        width: 100%;
+        height: 450px;
+        div{
+            width: 100%;
+            height: 60%;
+            background-image: url('./img/logoheader.png');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        h1{
+            font-size: 30px;
+            color: #efe784;
+            font-weight: 300;
+            text-transform: uppercase;
+            font-family: 'Inria Serif', serif;
+            letter-spacing: 30px;
+            padding-left: 4%;
+        }
+    }
+    .intro{
+        background-color: #3E3838;
+        width: 100%;
+        height: 300px;
+        color: #efe784;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        hr{
+            border: 1px solid #efe784;
+            width: 110px;
+            text-align: center;
+            &:nth-of-type(1){
+                margin-top: 20px;
+            }
+            &:nth-of-type(2){
+                margin-bottom: 40px;
+            }
+        }
+        h2{
+            font-family: 'Inria Serif', serif;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: 300;
+            text-align: center;
+            margin: 5px 0;
+        }
+        p{
+            margin: 0 3vw 0 10vw;
+            font-size: 18px;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+        }
+    }
+    .article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 600px;
+        p{
+            &:nth-of-type(1){
+                font-size: 25px;
+                text-transform: uppercase;
+                margin: 40px 0;
+            }
+            &:nth-of-type(2){
+                font-size: 18x;
+                margin: 0 3vw 20px 10vw;
+            }
+            &:nth-of-type(3){
+                font-size: 16px;
+                margin: 30px 3vw 0 10vw;
+                align-self: flex-start;
+                -webkit-hyphens: auto;
+                -moz-hyphens: auto;
+                -ms-hyphens: auto;
+                hyphens: auto;
+            }
+        }
+        div{
+            width: 80%;
+            height: 250px;
+            margin: 0 3vw 0 10vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .a1{
+        background-color: white;
+        p{
+            &:nth-of-type(3){
+                color: #6CBCB3;
+            }
+        }
+        div{
+            background-image: url('./img/avengers.jpg');
+        }
+    }
+    .a2{
+        background-color: #6CBCB3;
+        p{
+            &:nth-of-type(3){
+                color: white;
+            }
+        }
+        div{
+            background-image: url('./img/star.jpg');
+        }
+    }
+    .a3{
+        background-color: #3E3838;
+        p{
+            color: white;
+        }
+        div{
+            background-image: url('./img/woman.jpg');
+        }
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        width: 100%;
+        height: 150px;
+        padding: 10px 50px;
+        background-color: #0a0a0a;
+        div{
+            width: 30%;
+            height: 100%;
+            background-image: url('./img/logofooter.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            padding-bottom: 50px;
+        }
+        p{
+            color: white;
+            span{
+                color: #efe784;
+            }
+        }
+    }
+}
